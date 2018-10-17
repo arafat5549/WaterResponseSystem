@@ -11,8 +11,6 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-easyui-1.5.2/locale/easyui-lang-zh_CN.js" charset="utf-8"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/myEasyui.js" charset="utf-8"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/form.js" charset="utf-8"></script>
-
-
 <%--
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.cookie.js" charset="utf-8"></script>
 --%>

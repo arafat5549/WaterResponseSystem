@@ -69,7 +69,7 @@
 		var opts = state.options;
 		var win = $(target).panel($.extend({}, state.options, {
 			border: false,
-			doSize: true,	// size the panel, the property undefined in window websocket
+			doSize: true,	// size the panel, the property undefined in window component
 			closed: true,	// close the panel
 			cls: 'window ' + (!opts.border?'window-thinborder window-noborder ':(opts.border=='thin'?'window-thinborder ':'')) + (opts.cls || ''),
 			headerCls: 'window-header ' + (opts.headerCls || ''),

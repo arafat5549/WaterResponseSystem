@@ -27,7 +27,7 @@ public class CategoryController {
         }catch (Exception e){
             e.printStackTrace();
             result.setResult(false);
-            result.setMsg("部门添加异常");
+            result.setMsg("分类添加异常");
         }
         return result;
     }
@@ -39,7 +39,7 @@ public class CategoryController {
         }catch (Exception e){
             e.printStackTrace();
             result.setResult(false);
-            result.setMsg("部门更新异常");
+            result.setMsg("分类更新异常");
         }
         return result;
     }
@@ -53,7 +53,7 @@ public class CategoryController {
             categoryService.deleteByPrimaryKey(id);
         }catch (Exception e){
             result.setResult(false);
-            result.setMsg("部门删除异常");
+            result.setMsg("分类删除异常");
         }
         return result;
     }

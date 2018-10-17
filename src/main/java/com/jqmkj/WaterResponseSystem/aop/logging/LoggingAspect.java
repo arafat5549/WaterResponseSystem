@@ -11,8 +11,8 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
-//@Component
-//@Aspect
+@Component 
+@Aspect
 public class LoggingAspect {
 
     private final Logger log = Logger.getLogger(this.getClass());

@@ -799,7 +799,7 @@
 		}
 		
 		/**
-		 * create filter websocket
+		 * create filter component
 		 */
 		function createFilter(frozen){
 			var dc = state.dc;
@@ -809,7 +809,7 @@
 			}
 			var table = (frozen?dc.header1:dc.header2).find('table.datagrid-htable');
 			
-			// clear the old filter websocket
+			// clear the old filter component
 			table.find('.datagrid-filter').each(function(){
 				if (this.filter.destroy){
 					this.filter.destroy(this);
@@ -846,7 +846,7 @@
 
 				var fopts = getFilter(field);
 				if (fopts){
-					$(target)[name]('destroyFilter', field);	// destroy the old filter websocket
+					$(target)[name]('destroyFilter', field);	// destroy the old filter component
 				} else {
 					fopts = $.extend({}, {
 						field: field,

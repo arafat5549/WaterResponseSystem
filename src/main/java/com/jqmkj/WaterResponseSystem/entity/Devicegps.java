@@ -67,6 +67,8 @@ public class Devicegps extends BaseEntity {
     @Transient
     private String monitorsiteName;
     @Transient
+    private Integer categoryId;
+    @Transient
     private Integer gpsType;
 
     public String getDeviceinfoName() {
@@ -81,7 +83,12 @@ public class Devicegps extends BaseEntity {
     public void setMonitorsiteName(String monitorsiteName) {
         this.monitorsiteName = monitorsiteName;
     }
-
+    public Integer getCategoryId() {
+        return categoryId;
+    }
+    public void setCategoryId(Integer categoryId) {
+        this.categoryId = categoryId;
+    }
     public Integer getGpsType() {
         return gpsType;
     }

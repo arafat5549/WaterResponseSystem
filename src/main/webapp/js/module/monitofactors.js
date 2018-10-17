@@ -2,6 +2,7 @@ var method;
 var grid;
 var gridColumns = [
 {field:"id",			title:"ID",			align:"center",		hidden:true,editor:false},
+{field:"sno",			title:"编号",	align:"center",		width:100},
 {field:"name",			title:"名称",	align:"center",		width:100},
 {field:"ename",			title:"英文名",	align:"center",		width:100},
 {field:"unit",			title:"单位",	align:"center",		width:100},

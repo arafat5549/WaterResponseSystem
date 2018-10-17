@@ -309,7 +309,7 @@
 	}
 	
 	/**
-	 * create the websocket
+	 * create the component
 	 */
 	function create(target){
 		var state = $.data(target, 'combobox');

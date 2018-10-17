@@ -136,9 +136,9 @@ public class FakerDemo {
         //testService.initDeviceGpsData(3504);
         //testService.updateDeviceInfos();
 
-        //testService.createTestSql_data("deviceinfo_day_data",1);
-        //testService.createTestSql_data("deviceinfo_hour_data",1);
-        //testService.createTestSql_data("deviceinfo_minute_data",10);
+        testService.createTestSql_data("deviceinfo_day_data",1);
+        testService.createTestSql_data("deviceinfo_hour_data",1);
+        testService.createTestSql_data("deviceinfo_minute_data",10);
 
         //testService.createTestSql_data("deviceinfo_test_data",1);
 

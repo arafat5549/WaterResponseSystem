@@ -1,7 +1,6 @@
 package com.jqmkj.WaterResponseSystem.service;
 
 import com.jqmkj.WaterResponseSystem.pojo.EasyUIResult;
-import com.jqmkj.WaterResponseSystem.pojo.PageModel;
 import com.jqmkj.WaterResponseSystem.pojo.PageTree;
 import com.jqmkj.WaterResponseSystem.pojo.QueryInfo;
 import org.apache.ibatis.annotations.Param;
@@ -72,5 +71,4 @@ public interface BaseService<T>{
     List<PageTree> getChildrensChildrens(Class<T> t, PageTree pageTree);//获取下与下下级子节点
 
     //#####################################mybatis 结束#############################################//
-    //PageModel<T> queryListPageMetronic(QueryInfo queryInfo, Example example);
 }

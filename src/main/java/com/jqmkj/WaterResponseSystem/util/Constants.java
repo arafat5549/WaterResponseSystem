@@ -6,7 +6,6 @@ import com.jqmkj.WaterResponseSystem.entity.BaseDataEntity;
 import com.jqmkj.WaterResponseSystem.entity.DeviceInfoRealTimeData;
 import com.jqmkj.WaterResponseSystem.entity.DeviceinfoDayData;
 import com.jqmkj.WaterResponseSystem.entity.DeviceinfoHourData;
-import com.sun.tools.javac.code.Attribute;
 
 import java.util.List;
 

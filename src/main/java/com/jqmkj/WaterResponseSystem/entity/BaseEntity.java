@@ -1,11 +1,7 @@
 package com.jqmkj.WaterResponseSystem.entity;
 
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.jqmkj.WaterResponseSystem.config.ExcelAttribute;
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Parameter;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -25,21 +21,14 @@ import javax.persistence.MappedSuperclass;
 public class BaseEntity implements Serializable{
 
 	@Id
-	//@GeneratedValue(strategy=GenerationType.IDENTITY,generator = "JDBC")//insert返回主键
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-//	@GeneratedValue(generator = "idGenerator")
-//	@GenericGenerator(name = "idGenerator", strategy = "com.jqmkj.WaterResponseSystem.test",
-//			parameters = { @Parameter(name = "dataCenterID", value = "20") ,@Parameter(name = "idLength", value = "10")})
-
 	@Column(name = "id")
 	private Long id;
 	//private String available = "1";
 	@Column(length=20,name="create_person")
 	private String createPerson;
-
 	@Column(length=25,name="create_date")
 	private LocalDateTime createDate;
-
 	@Column(length=20,name="update_person")
 	private String updatePerson;
 	@Column(length=25,name="update_date")

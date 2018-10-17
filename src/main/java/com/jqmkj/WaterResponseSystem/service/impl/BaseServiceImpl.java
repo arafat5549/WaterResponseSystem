@@ -6,7 +6,6 @@ import com.jqmkj.WaterResponseSystem.basemapper.BaseMapper;
 import com.jqmkj.WaterResponseSystem.entity.BaseEntity;
 import com.jqmkj.WaterResponseSystem.entity.SysUser;
 import com.jqmkj.WaterResponseSystem.pojo.EasyUIResult;
-import com.jqmkj.WaterResponseSystem.pojo.PageModel;
 import com.jqmkj.WaterResponseSystem.pojo.PageTree;
 import com.jqmkj.WaterResponseSystem.pojo.QueryInfo;
 import com.jqmkj.WaterResponseSystem.service.BaseService;
@@ -157,24 +156,6 @@ public class BaseServiceImpl<T extends BaseEntity> implements BaseService<T> {
         PageInfo<T> pageInfo = new PageInfo<T>(t);
         return new EasyUIResult(pageInfo.getTotal(), t);
     }
-
-//    /**
-//     * 通用分页 Metronic版本
-//     * @return
-//     */
-//    @Override
-//    public PageModel<T> queryListPageMetronic(QueryInfo queryInfo, Example example) {
-//        PageHelper.startPage(queryInfo.getPage(), queryInfo.getRows());
-//        List<T> t = baseMapper.selectByExample(example);
-//        // 获取分页之后的信息
-//        PageInfo<T> pageInfo = new PageInfo<T>(t);
-//
-//        PageModel<T> pagemodel = new PageModel();
-//        pagemodel.setRecordsFiltered(pageInfo.getTotal());
-//        pagemodel.setRecordsTotal(pageInfo.getTotal());
-//        pagemodel.setData(t);
-//        return pagemodel;//new EasyUIResult(pageInfo.getTotal(), t);
-//    }
 
     //#######################################树查询相关方法############################################################//
     @Override
